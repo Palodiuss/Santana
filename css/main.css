@@ -51,11 +51,11 @@ nav {
   height: 70px;
   margin-top: 35px;
   margin-bottom: 37px;
-  margin-right: 146px;
+  margin-right: 148px;
 }
 
 .nav-links {
-  margin-right: 120px;
+  margin-right: 115px;
   margin-top: 35px;
   width: 650px;
   display: -webkit-box;
@@ -106,6 +106,9 @@ nav {
 }
 
 .pl {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   width: 136px;
   height: 54px;
   margin-top: 43px;
@@ -149,8 +152,8 @@ nav {
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
-  -ms-grid-rows: 25vw 25vw 25vw;
-      grid-template-rows: 25vw 25vw 25vw;
+  -ms-grid-rows: 23.85vw 23.85vw 23.85vw;
+      grid-template-rows: 23.85vw 23.85vw 23.85vw;
       grid-template-areas: "one one two three" "four five six seven" "eight nine ten ten";
 }
 
@@ -395,6 +398,23 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: firstName;
+  position: relative;
+}
+
+.contact select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Remove default arrow */
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow.svg);
+  /* Add custom arrow */
+}
+
+.contact select::-ms-expand {
+  display: none;
+  /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
 }
 
 .contact .form-select {
@@ -529,17 +549,96 @@ nav {
 }
 
 footer {
+  margin-top: 76px;
   width: 100%;
   height: 302px;
   background-color: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-container {
+  margin-top: 80px;
+  width: 1242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo {
+  margin-top: 32px;
+  width: 196px;
+  height: 70px;
+}
+
+.social-media {
+  margin-left: -12px;
+  margin-top: 14px;
+  width: 316px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newsletter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsletter-span {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.newsletter-button {
+  margin-top: 25px;
+  margin-left: 4px;
+  background-color: #6764cb;
+  width: 363px;
+  height: 81px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.button-text {
+  margin-left: -4px;
 }
 /*# sourceMappingURL=main.css.map */

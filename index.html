@@ -86,14 +86,13 @@
           <div class="input-container">
             <input class="form-name" type="text" name="name" />
             <select class="form-select" placeholder="Wybierz temat">
-              <optgroup>
-                <option value="" disabled selected hidden>Wybierz temat</option>
-                <option value="volvo">Topic1</option>
-                <option value="saab">Topic2</option>
-                <option value="opel">Topic3</option>
-                <option value="audi">Topic4</option>
-              </optgroup>
+              <option value="" disabled selected hidden>Wybierz temat</option>
+              <option value="volvo">Topic1</option>
+              <option value="saab">Topic2</option>
+              <option value="opel">Topic3</option>
+              <option value="audi">Topic4</option>
             </select>
+
             <input
               class="form-mail"
               type="text"
@@ -103,8 +102,14 @@
             <div class="form-radio">
               <p>Jestem:</p>
 
-              <label><input class="radio" type="radio" name="model" /> Klientem</label>
-              <label><input class="radio" type="radio" name="model" /> Modelką</label>
+              <label
+                ><input class="radio" type="radio" name="model" />
+                Klientem</label
+              >
+              <label
+                ><input class="radio" type="radio" name="model" />
+                Modelką</label
+              >
             </div>
 
             <textarea
@@ -131,7 +136,20 @@
 
       <footer>
         <div class="footer-container">
-          <img src="img/logo.png" alt="Santana logo" />
+          <img class="footer-logo" src="img/logo.png" alt="Santana logo" />
+          <div class="social-media">
+            <img src="img/sm-1.svg" alt="Facebook link" />
+            <img src="img/sm-3.svg" alt="Twitter link" />
+            <img src="img/sm-4.svg" alt="Instagram link" />
+            <img src="img/sm-2.svg" alt="Behance link" />
+          </div>
+
+          <div class="newsletter-container">
+            <span class="newsletter-span"
+              >Tipy, techniki i nowości na rynku fotograficznym</span
+            >
+            <button class="newsletter-button"><span class="button-text">Newsletter</span></button>
+          </div>
         </div>
       </footer>
     </div>
