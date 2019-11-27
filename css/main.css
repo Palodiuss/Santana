@@ -149,14 +149,14 @@ nav {
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-rows: 25vw 25vw 25vw;
+      grid-template-rows: 25vw 25vw 25vw;
       grid-template-areas: "one one two three" "four five six seven" "eight nine ten ten";
 }
 
 .portfolio-img {
   width: 100%;
-  height: 458px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
