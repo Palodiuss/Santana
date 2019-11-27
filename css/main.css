@@ -142,6 +142,7 @@ nav {
 }
 
 .pl-arrow {
+  cursor: pointer;
   margin-top: 12px;
   margin-left: 15px;
 }
@@ -625,6 +626,7 @@ footer {
 }
 
 .newsletter-button {
+  cursor: pointer;
   margin-top: 25px;
   margin-left: 4px;
   background-color: #6764cb;
