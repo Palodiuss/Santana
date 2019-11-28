@@ -380,16 +380,18 @@ nav {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* Remove default arrow */
   background-position: 95% 50%;
   background-repeat: no-repeat;
   background-image: url(../img/arrow.svg);
-  /* Add custom arrow */
+  cursor: pointer;
+}
+
+.contact option {
+  cursor: pointer;
 }
 
 .contact select::-ms-expand {
   display: none;
-  /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
 }
 
 .contact .form-select {
