@@ -47,7 +47,7 @@
         <div class="portfolio-img portfolio-img-10"></div>
       </div>
 
-      <div class="ikony">
+      <div class="icons">
         <div class="icon-container">
           <object class="picture" data="img/ikona-1.svg" type="image/svg+xml">Photo</object>
         </div>
@@ -87,13 +87,7 @@
           <label class="name-label" for="name">Imię</label>
           <div class="input-container">
             <input class="form-name" type="text" name="name" />
-            <select class="form-select" placeholder="Wybierz temat">
-              <option value="" disabled selected hidden>Wybierz temat</option>
-              <option value="volvo">Topic1</option>
-              <option value="saab">Topic2</option>
-              <option value="opel">Topic3</option>
-              <option value="audi">Topic4</option>
-            </select>
+
 
             <input
               class="form-mail"
@@ -114,6 +108,14 @@
               >
             </div>
 
+            <select class="form-select" placeholder="Wybierz temat">
+                <option value="" disabled selected hidden>Wybierz temat</option>
+                <option value="volvo">Topic1</option>
+                <option value="saab">Topic2</option>
+                <option value="opel">Topic3</option>
+                <option value="audi">Topic4</option>
+              </select>
+
             <textarea
               class="form-message"
               placeholder="Treść wiadomości"
@@ -129,7 +131,7 @@
                 value="agree"
               />
               <span class="checkmark"></span>
-              <span>Wyrażam zgodę na przetwarzanie moich danych osobowych</span>
+              <span class="check-text">Wyrażam zgodę na przetwarzanie moich danych osobowych</span>
             </div>
             <input class="button" type="submit" value="Wyślij wiadomość" />
           </div>
@@ -148,7 +150,7 @@
 
           <div class="newsletter-container">
             <span class="newsletter-span"
-              >Tipy, techniki i nowości na rynku fotograficznym</span
+              >Tipy, techniki i nowości<br class="brake" /> na rynku fotograficznym</span
             >
             <button class="newsletter-button"><span class="button-text">Newsletter</span></button>
           </div>
