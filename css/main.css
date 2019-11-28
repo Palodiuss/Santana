@@ -54,6 +54,10 @@ nav {
   margin-right: 148px;
 }
 
+.navicon {
+  display: none;
+}
+
 .nav-links {
   margin-right: 115px;
   margin-top: 35px;
@@ -662,19 +666,95 @@ footer {
   nav {
     width: 100%;
     min-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-buttons {
+    width: 100%;
+    min-width: 300px;
     height: 120px;
     margin: auto 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-logo {
-    margin-left: 30px;
+    margin: 35px 0 37px 30px;
     width: 150px;
     height: 54px;
   }
+  .navicon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 35px;
+    height: 25px;
+    margin-top: 45px;
+    margin-right: 30px;
+    background-image: url(/dist/img/hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .navicon-close {
+    width: 26px;
+    height: 26px;
+    margin-right: 33px;
+    background-image: url(/dist/img/close.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   .nav-links {
+    margin: 40px 0 0 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-links a {
+    font-size: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 0 22px 0  !important;
+  }
+  .hidden {
     display: none;
   }
   .pl {
-    display: none;
+    margin: 40px 45px 75px 45px;
+    width: calc(100% - 90px);
+    height: 65px;
+  }
+  .pl-span, .pl-flag, .pl-arrow {
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .pl-span {
+    margin-left: 25px;
+    margin-right: 140px;
+  }
+  .pl-flag {
+    margin-right: 20px;
   }
   .portfolio {
     display: -webkit-box;
@@ -704,13 +784,15 @@ footer {
     margin-bottom: 70px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 37.6vw 37.6vw;
-        grid-template-columns: 37.6vw 37.6vw;
+    -ms-grid-columns: 37.6vw;
+        grid-template-columns: 37.6vw;
+    grid-auto-columns: 37.6vw;
     -ms-grid-rows: (37.6vw)[5];
         grid-template-rows: repeat(5, 37.6vw);
     -webkit-column-gap: 35px;
             column-gap: 35px;
     row-gap: 25px;
+    grid-auto-flow: column;
     justify-items: stretch;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -896,6 +978,7 @@ footer {
     background: transparent;
     border: 3px solid #000;
     border-radius: 10px;
+    font-size: 24px;
   }
   .brake {
     display: inherit;
