@@ -15,6 +15,10 @@
   display: none;
 }
 
+textarea {
+  resize: none;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -274,13 +278,12 @@ nav {
 .icons {
   margin: 93px auto;
   margin-bottom: 90px;
-  width: 1244px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (211px)[5];
-      grid-template-columns: repeat(5, 211px);
-  -ms-grid-rows: (211px)[2];
-      grid-template-rows: repeat(2, 211px);
+  -ms-grid-columns: (11vw)[5];
+      grid-template-columns: repeat(5, 11vw);
+  -ms-grid-rows: (11vw)[2];
+      grid-template-rows: repeat(2, 11vw);
   grid-column-gap: 46px;
   grid-row-gap: 45px;
 }
@@ -738,7 +741,22 @@ footer {
   .hidden {
     display: none;
   }
+  .flag-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 25px;
+  }
   .pl {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 40px 45px 75px 45px;
     width: calc(100% - 90px);
     height: 65px;
@@ -751,67 +769,9 @@ footer {
   }
   .pl-span {
     margin-left: 25px;
-    margin-right: 140px;
   }
   .pl-flag {
     margin-right: 20px;
-  }
-  .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .portfolio-img {
-    width: 100vw;
-    height: 100vw;
-  }
-  .portfolio-img-6,
-  .portfolio-img-7,
-  .portfolio-img-8,
-  .portfolio-img-9,
-  .portfolio-img-10 {
-    display: none;
-  }
-  .icons {
-    width: 100%;
-    margin-top: 66px;
-    margin-bottom: 70px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 37.6vw;
-        grid-template-columns: 37.6vw;
-    grid-auto-columns: 37.6vw;
-    -ms-grid-rows: (37.6vw)[5];
-        grid-template-rows: repeat(5, 37.6vw);
-    -webkit-column-gap: 35px;
-            column-gap: 35px;
-    row-gap: 25px;
-    grid-auto-flow: column;
-    justify-items: stretch;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .icon-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .icon-container .picture {
-    width: 60%;
-    height: 60%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
   .contact {
     width: 100%;
@@ -982,6 +942,68 @@ footer {
   }
   .brake {
     display: inherit;
+  }
+}
+
+@media (max-width: 1272px) and (max-width: 768px) {
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .portfolio-img {
+    width: 100vw;
+    height: 100vw;
+    background-position: center;
+    background-size: cover;
+  }
+  .portfolio-img-5,
+  .portfolio-img-6,
+  .portfolio-img-8,
+  .portfolio-img-9,
+  .portfolio-img-10 {
+    display: none;
+  }
+  .icons {
+    width: 100%;
+    margin-top: 66px;
+    margin-bottom: 70px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 37.6vw;
+        grid-template-columns: 37.6vw;
+    grid-auto-columns: 37.6vw;
+    -ms-grid-rows: (37.6vw)[5];
+        grid-template-rows: repeat(5, 37.6vw);
+    -webkit-column-gap: 35px;
+            column-gap: 35px;
+    row-gap: 25px;
+    grid-auto-flow: column;
+    justify-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icon-container .picture {
+    width: 60%;
+    height: 60%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
