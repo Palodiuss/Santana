@@ -133,6 +133,18 @@ nav {
       flex-wrap: nowrap;
 }
 
+.flag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .pl-span {
   margin-top: 10px;
   margin-left: 18px;
@@ -620,6 +632,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.social-media-icon {
+  cursor: pointer;
 }
 
 .newsletter-container {
