@@ -135,7 +135,7 @@ nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: 100%;
-  margin-left: 5px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -182,6 +182,7 @@ nav {
 .pl-arrow {
   cursor: pointer;
   margin-right: 10px;
+  margin-top: -5px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -327,6 +328,7 @@ nav {
   width: 100%;
   height: 100%;
   padding: 20%;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,6 +338,7 @@ nav {
 }
 
 .icon-container .picture {
+  cursor: pointer;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -437,7 +440,7 @@ nav {
 }
 
 .contact .form-select {
-  margin-top: 20px;
+  margin-top: 27px;
   height: 60px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -466,6 +469,10 @@ nav {
   color: #fff;
   font-size: 24px;
   font-weight: 300;
+}
+
+.contact .form-radio p {
+  margin-top: 30px;
 }
 
 .contact .form-radio label {
@@ -521,6 +528,7 @@ nav {
   position: relative;
   top: 0px;
   left: 7px;
+  cursor: pointer;
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -563,7 +571,7 @@ nav {
 }
 
 .floating-label {
-  top: 38px;
+  top: 45px;
 }
 
 .floating-textarea {
@@ -573,15 +581,14 @@ nav {
 }
 
 .input-container {
-  margin-top: 7px;
   display: -ms-grid;
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 10px;
   -ms-grid-columns: 500px 500px;
       grid-template-columns: 500px 500px;
-  -ms-grid-rows: 87px 87px 170px;
-      grid-template-rows: 87px 87px 170px;
+  -ms-grid-rows: 87px 87px 176px;
+      grid-template-rows: 87px 87px 176px;
       grid-template-areas: "firstName select" "mail message" "radio message";
 }
 
@@ -637,8 +644,8 @@ nav {
 }
 
 .button {
-  margin-top: 53px;
-  margin-bottom: 80px;
+  margin-top: 54px;
+  margin-bottom: 81px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -715,10 +722,6 @@ footer {
           justify-content: space-between;
 }
 
-.social-media-icon {
-  cursor: pointer;
-}
-
 .newsletter-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,7 +753,9 @@ footer {
 }
 
 .button-text {
-  margin-left: -4px;
+  position: relative;
+  top: -1px;
+  margin-left: -5px;
 }
 
 .brake {
@@ -768,6 +773,9 @@ footer {
   }
   .wrapper {
     width: 100%;
+  }
+  .button-text {
+    top: -3px !important;
   }
   nav {
     width: 100%;
@@ -909,6 +917,10 @@ footer {
         flex-wrap: nowrap;
     margin-right: 25px;
   }
+  .option {
+    height: 50px;
+    margin-top: 3px;
+  }
   .pl-span, .pl-flag, .pl-arrow {
     margin: 0;
     -ms-flex-item-align: center;
@@ -922,7 +934,8 @@ footer {
     margin-left: 20px;
   }
   .pl-arrow {
-    margin-right: 10px;
+    margin-top: -5px;
+    margin-right: 20px;
   }
   .portfolio {
     -ms-grid-columns: 50% 50%;
@@ -970,13 +983,14 @@ footer {
     font-size: 20px;
   }
   .input-container {
+    margin-top: 0;
     display: -ms-grid;
     display: grid;
-    grid-row-gap: 17px;
+    grid-row-gap: 9px;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 80px 80px auto 80px auto;
-        grid-template-rows: 80px 80px auto 80px auto;
+    -ms-grid-rows: 87px 87px auto 80px 273px;
+        grid-template-rows: 87px 87px auto 80px 273px;
         grid-template-areas: "firstName" "mail" "radio" "select" "message";
   }
   .form-name,
@@ -987,20 +1001,21 @@ footer {
     width: 100%;
   }
   .form-radio {
-    margin-top: -13px !important;
     margin-left: 16px;
     margin-bottom: 0px;
   }
   .form-radio p {
+    margin-top: 15px !important;
     margin-bottom: 25px;
     font-size: 20px;
   }
-  .form-radio label {
-    margin-bottom: 5px;
+  .form-radio .radio {
+    margin-bottom: 20px;
     font-size: 14px;
   }
   .form-message {
-    height: 266px !important;
+    height: 273px !important;
+    top: -7px;
   }
   .floating-textarea {
     height: 244px;
@@ -1008,11 +1023,11 @@ footer {
   .form-select {
     margin-top: 4px !important;
   }
-  .form-message {
-    margin-top: -10px;
-  }
   .floating-label {
-    top: 36px;
+    top: 42px;
+  }
+  .floating-label-field {
+    margin-top: 27px !important;
   }
   .floating-label-field:focus + .floating-label,
   .floating-label-field:valid + .floating-label {
@@ -1020,8 +1035,6 @@ footer {
             transform: translate3d(0, -40px, 0) !important;
   }
   .submits-container {
-    margin: 55px auto 0 auto;
-    width: 500px;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1036,8 +1049,8 @@ footer {
     -webkit-box-sizing: border-box;
     height: 81px;
     width: 265px;
-    margin-top: 50px;
-    margin-bottom: 73px;
+    margin-top: 52px;
+    margin-bottom: 71px;
     font-size: 24px;
   }
   footer {
@@ -1183,7 +1196,7 @@ footer {
         align-self: center;
   }
   .submits-container {
-    margin: 55px auto 0 auto;
+    margin: 47px auto 0 auto;
     width: 265px;
   }
   input[type="checkbox"] {
@@ -1237,7 +1250,7 @@ footer {
 }
 
 .floating-label-field {
-  margin-top: 20px;
+  margin-top: 27px;
   width: calc(100% - 20px);
 }
 
